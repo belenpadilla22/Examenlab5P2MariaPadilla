@@ -23,5 +23,10 @@ public class Civiles extends Usuario {
     public void setTramites(ArrayList<Tramite> tramites) {
         this.tramites = tramites;
     }
+
+    @Override
+    public String identidad(Usuario identidad) {
+       return " ";
+    }
     
 }

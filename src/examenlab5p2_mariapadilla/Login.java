@@ -24,9 +24,9 @@ public class Login extends javax.swing.JFrame {
        ArrayList <Usuario> usuarios=new ArrayList ();
       
        Date f=new Date ();
-       Usuario u=new Usuario ("Belen", "Padilla", "12341", f, " ", " ", 0);
-       u=new Usuario ("Maria", "Canelo", "12351", f, " ", " ", 0);
-       usuarios.add(u);
+//       Usuario u=new Usuario ("Belen", "Padilla", "12341", f, " ", " ", 0);
+//       u=new Usuario ("Maria", "Canelo", "12351", f, " ", " ", 0);
+//       usuarios.add(u);
        
     }
 
@@ -39,17 +39,17 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        VentanaCiviles = new javax.swing.JPanel();
-        jTabbedPane3 = new javax.swing.JTabbedPane();
-        jPanel6 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
         Empleados = new javax.swing.JFrame();
         VentanaEmpleados = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jFrame1 = new javax.swing.JFrame();
+        informacion = new javax.swing.JPanel();
+        Modificacion = new javax.swing.JPanel();
+        Civiles = new javax.swing.JFrame();
+        VentanaCiviles = new javax.swing.JPanel();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -60,6 +60,82 @@ public class Login extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         apellido = new javax.swing.JTextField();
         IngresarLogin = new javax.swing.JButton();
+
+        Empleados.setResizable(false);
+
+        VentanaEmpleados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
+        jTabbedPane1.setForeground(new java.awt.Color(0, 0, 0));
+
+        informacion.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout informacionLayout = new javax.swing.GroupLayout(informacion);
+        informacion.setLayout(informacionLayout);
+        informacionLayout.setHorizontalGroup(
+            informacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 570, Short.MAX_VALUE)
+        );
+        informacionLayout.setVerticalGroup(
+            informacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 299, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Informacion civiles ", informacion);
+
+        Modificacion.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout ModificacionLayout = new javax.swing.GroupLayout(Modificacion);
+        Modificacion.setLayout(ModificacionLayout);
+        ModificacionLayout.setHorizontalGroup(
+            ModificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 570, Short.MAX_VALUE)
+        );
+        ModificacionLayout.setVerticalGroup(
+            ModificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 299, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("Modificacion civiles", Modificacion);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane1)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
+        );
+
+        VentanaEmpleados.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        javax.swing.GroupLayout EmpleadosLayout = new javax.swing.GroupLayout(Empleados.getContentPane());
+        Empleados.getContentPane().setLayout(EmpleadosLayout);
+        EmpleadosLayout.setHorizontalGroup(
+            EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 570, Short.MAX_VALUE)
+            .addGroup(EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(EmpleadosLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(VentanaEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        EmpleadosLayout.setVerticalGroup(
+            EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
+            .addGroup(EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(EmpleadosLayout.createSequentialGroup()
+                    .addGap(0, 4, Short.MAX_VALUE)
+                    .addComponent(VentanaEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 4, Short.MAX_VALUE)))
+        );
 
         VentanaCiviles.setBackground(new java.awt.Color(255, 255, 255));
         VentanaCiviles.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -99,91 +175,25 @@ public class Login extends javax.swing.JFrame {
 
         VentanaCiviles.add(jTabbedPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 520, 310));
 
-        Empleados.setResizable(false);
-
-        VentanaEmpleados.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        jTabbedPane1.setBackground(new java.awt.Color(153, 153, 153));
-        jTabbedPane1.setForeground(new java.awt.Color(0, 0, 0));
-
-        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 299, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Informacion civiles ", jPanel4);
-
-        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 299, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Modificacion civiles", jPanel5);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jTabbedPane1)
-                .addContainerGap())
-        );
-
-        VentanaEmpleados.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        javax.swing.GroupLayout EmpleadosLayout = new javax.swing.GroupLayout(Empleados.getContentPane());
-        Empleados.getContentPane().setLayout(EmpleadosLayout);
-        EmpleadosLayout.setHorizontalGroup(
-            EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-            .addGroup(EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(EmpleadosLayout.createSequentialGroup()
+        javax.swing.GroupLayout CivilesLayout = new javax.swing.GroupLayout(Civiles.getContentPane());
+        Civiles.getContentPane().setLayout(CivilesLayout);
+        CivilesLayout.setHorizontalGroup(
+            CivilesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(CivilesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(CivilesLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(VentanaEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VentanaCiviles, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        EmpleadosLayout.setVerticalGroup(
-            EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-            .addGroup(EmpleadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(EmpleadosLayout.createSequentialGroup()
-                    .addGap(0, 4, Short.MAX_VALUE)
-                    .addComponent(VentanaEmpleados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 4, Short.MAX_VALUE)))
-        );
-
-        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
-        jFrame1.getContentPane().setLayout(jFrame1Layout);
-        jFrame1Layout.setHorizontalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        jFrame1Layout.setVerticalGroup(
-            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        CivilesLayout.setVerticalGroup(
+            CivilesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(CivilesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(CivilesLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(VentanaCiviles, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -290,15 +300,16 @@ public class Login extends javax.swing.JFrame {
         // primer boton
         if (nombre.getText().equalsIgnoreCase("Belen") && apellido.getText().equalsIgnoreCase("Padilla")&& contra.getText().equalsIgnoreCase("123")) {
             Empleados.pack();
-          
             Empleados.setVisible(true);
+            this.setVisible(false);
             
            
         
         }
         if (nombre.getText().equalsIgnoreCase("Maria") && apellido.getText().equalsIgnoreCase("Padilla")&& contra.getText().equalsIgnoreCase("122")) {
-            VentanaCiviles.setVisible(true);
-            
+          Civiles.pack();
+          Civiles.setVisible(true);
+          this.setVisible(false);
             
         
         }
@@ -343,13 +354,15 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFrame Civiles;
     private javax.swing.JFrame Empleados;
     private javax.swing.JButton IngresarLogin;
+    private javax.swing.JPanel Modificacion;
     private javax.swing.JPanel VentanaCiviles;
     private javax.swing.JPanel VentanaEmpleados;
     private javax.swing.JTextField apellido;
     private javax.swing.JTextField contra;
-    private javax.swing.JFrame jFrame1;
+    private javax.swing.JPanel informacion;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -357,8 +370,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JTabbedPane jTabbedPane1;

@@ -3,7 +3,7 @@ package examenlab5p2_mariapadilla;
 
 import java.util.Date;
 
-public class Usuario {
+public  abstract class Usuario {
     private String nombre;
     private String apellido,contra;
     private Date fecha;
@@ -84,6 +84,8 @@ public class Usuario {
     public String toString() {
         return "Usuario{" + "nombre=" + nombre + ", apellido=" + apellido + ", contra=" + contra + ", fecha=" + fecha + ", sexo=" + sexo + ", departamiento=" + departamiento + ", identidad=" + identidad + '}';
     }
+    
+    public abstract String identidad (Usuario identidad);
     
     
 }

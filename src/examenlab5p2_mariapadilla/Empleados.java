@@ -1,7 +1,9 @@
 
 package examenlab5p2_mariapadilla;
 
+import java.awt.font.NumericShaper;
 import java.util.Date;
+import java.util.Random;
 
 /**
  *
@@ -54,8 +56,43 @@ public class Empleados extends Usuario {
 
     @Override
     public String toString() {
-        return "Empleados{" + "carrera=" + carrera + ", puesto=" + puesto + ", year=" + year + '}';
+        return super.toString()+ "Empleados{" + "carrera=" + carrera + ", puesto=" + puesto + ", year=" + year + '}';
     }
+
+    @Override
+    public String identidad(Usuario identidad) {
+        Random ran=new Random ();
+        String id= " ";
+        int aleatorio=ran. nextInt(28);
+        if (identidad.getDepartamiento().equalsIgnoreCase("Franciso Morazan")){
+            if (aleatorio > 1 && aleatorio<28){
+                id = "01" + aleatorio+this.year;
+                
+            }
+    
+    
+    } else 
+        if (identidad.getDepartamiento().equalsIgnoreCase("cortes")){
+            if (aleatorio > 1 && aleatorio<12){
+                id = "02" + aleatorio+this.year;
+                
+            }
+    
+    
+    } else 
+      if (identidad.getDepartamiento().equalsIgnoreCase("Franciso Morazan")){
+            if (aleatorio > 1 && aleatorio<21){
+                 id = "03" + aleatorio+this.year;
+                
+            }
+    
+    
+    } 
+    
+     return id;
+        
+    }
+    
     
     
     
