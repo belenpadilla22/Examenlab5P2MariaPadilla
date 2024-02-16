@@ -4,10 +4,24 @@
  */
 package examenlab5p2_mariapadilla;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author belen
  */
-public class Civiles {
+public class Civiles extends Usuario {
+     private ArrayList <Tramite> tramites =new ArrayList ();
+
+    public Civiles() {
+    }
+
+    public ArrayList<Tramite> getTramites() {
+        return tramites;
+    }
+
+    public void setTramites(ArrayList<Tramite> tramites) {
+        this.tramites = tramites;
+    }
     
 }
