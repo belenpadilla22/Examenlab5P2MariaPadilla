@@ -4,7 +4,7 @@ package examenlab5p2_mariapadilla;
 import java.util.Date;
 
 public class Usuario {
-     private String nombre;
+    private String nombre;
     private String apellido,contra;
     private Date fecha;
     private String sexo;
