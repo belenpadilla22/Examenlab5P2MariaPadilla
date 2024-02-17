@@ -17,14 +17,14 @@ public class Empleados extends Usuario {
     public Empleados() {
     }
 
-    public Empleados(String carrera, String puesto, String year) {
-        this.carrera = carrera;
-        this.puesto = puesto;
-        this.year = year;
-    }
+//    public Empleados(String carrera, String puesto, String year) {
+//        this.carrera = carrera;
+//        this.puesto = puesto;
+//        this.year = year;
+//    }
 
-    public Empleados(String carrera, String puesto, String year, String nombre, String apellido, String contra, Date fecha, String sexo, String departamiento, int identidad) {
-        super(nombre, apellido, contra, fecha, sexo, departamiento, identidad);
+    public Empleados(String carrera, String puesto, String year, String nombre, String apellido, String contra, Date fecha, String sexo, String departamento, String identidad) {
+        super(nombre, apellido, contra, fecha, sexo,departamento, identidad);
         this.carrera = carrera;
         this.puesto = puesto;
         this.year = year;
@@ -56,43 +56,9 @@ public class Empleados extends Usuario {
 
     @Override
     public String toString() {
-        return super.toString()+ "Empleados{" + "carrera=" + carrera + ", puesto=" + puesto + ", year=" + year + '}';
+        return  "Empleados{" + "carrera=" + carrera + ", puesto=" + puesto + ", year=" + year + '}'+super.toString();
     }
 
-    @Override
-    public String identidad(Usuario identidad) {
-        Random ran=new Random ();
-        String id= " ";
-        int aleatorio=ran. nextInt(28);
-        if (identidad.getDepartamiento().equalsIgnoreCase("Franciso Morazan")){
-            if (aleatorio > 1 && aleatorio<28){
-                id = "01" + aleatorio+this.year;
-                
-            }
-    
-    
-    } else 
-        if (identidad.getDepartamiento().equalsIgnoreCase("cortes")){
-            if (aleatorio > 1 && aleatorio<12){
-                id = "02" + aleatorio+this.year;
-                
-            }
-    
-    
-    } else 
-      if (identidad.getDepartamiento().equalsIgnoreCase("Franciso Morazan")){
-            if (aleatorio > 1 && aleatorio<21){
-                 id = "03" + aleatorio+this.year;
-                
-            }
-    
-    
-    } 
-    
-     return id;
-        
-    }
-    
     
     
     

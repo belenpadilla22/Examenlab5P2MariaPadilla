@@ -5,6 +5,8 @@
 package examenlab5p2_mariapadilla;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Random;
 
 /**
  *
@@ -12,9 +14,14 @@ import java.util.ArrayList;
  */
 public class Civiles extends Usuario {
      private ArrayList <Tramite> tramites =new ArrayList ();
+     private String year;
 
     public Civiles() {
     }
+    public Civiles (String nombre, String apellido, String contra, Date fecha, String sexo, String departamento, String identidad){
+        super (nombre,apellido,contra,fecha,sexo,departamento, identidad );
+    }
+    
 
     public ArrayList<Tramite> getTramites() {
         return tramites;
@@ -24,9 +31,5 @@ public class Civiles extends Usuario {
         this.tramites = tramites;
     }
 
-    @Override
-    public String identidad(Usuario identidad) {
-       return " ";
-    }
     
 }
