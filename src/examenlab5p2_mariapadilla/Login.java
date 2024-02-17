@@ -452,6 +452,7 @@ public class Login extends javax.swing.JFrame {
              Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
          }
          DefaultTableModel model = (DefaultTableModel) Nacimiento.getModel();
+         model.removeRow(jComboBox1.getSelectedIndex());
          Object []modelo2={usuarios.get(jComboBox1.getSelectedIndex()).getNombre(),usuarios.get(jComboBox1.getSelectedIndex()).getApellido(),usuarios.get(jComboBox1.getSelectedIndex()).identidad(), usuarios.get(jComboBox1.getSelectedIndex()).getFecha()};
          model.addRow(modelo2);
          Nacimiento.setModel(model);
