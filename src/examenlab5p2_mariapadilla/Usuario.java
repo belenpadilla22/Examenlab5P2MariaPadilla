@@ -96,8 +96,9 @@ public abstract class Usuario {
         return "Usuario{" + "nombre=" + nombre + ", apellido=" + apellido + ", contra=" + contra + ", fecha=" + fecha + ", sexo=" + sexo + ", departamiento=" + departamento + ", identidad=" + identidad + '}';
     }
 
-    public String identidad() {
-        Random ran = new Random();
+    public String identidad(){
+    
+    Random ran = new Random();
 
         if (this.departamento.equalsIgnoreCase("Franciso Morazan")) {
             int aleatorio = ran.nextInt(28);
@@ -128,6 +129,10 @@ public abstract class Usuario {
         }
         // System.out.println(id);
         return identidad;
+    
+    
     }
+       
+    
 
 }
